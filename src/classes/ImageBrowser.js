@@ -29,6 +29,9 @@ export default class ImageBrowser {
     imageBrowser.append(this.createCloseButton());
   }
 
+  /* ################################################################################*/
+  // Render Helper Functions
+  /* ################################################################################*/
   createPageHeader() {
     const button = document.createElement('h1');
     button.classList.add('page-title');
@@ -108,6 +111,9 @@ export default class ImageBrowser {
     }
   }
 
+  /* ################################################################################*/
+  // Util Functions
+  /* ################################################################################*/
   changePage(increment) {
     this.page += increment;
     this.page = this.page < 1 ? 1 : this.page;
